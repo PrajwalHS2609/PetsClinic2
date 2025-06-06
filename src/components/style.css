@@ -1,0 +1,229 @@
+.servicesMain-container {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px;
+  padding-top: 30px;
+}
+.servicesMain-content {
+  /* border: solid green; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.servicesMain-content:nth-child(1) {
+  width: 30%;
+}
+.servicesMain-content:nth-child(2) {
+  width: 70%;
+}
+/* ----------------------------------------------------- */
+.servicesMain-itemWrapper {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--customBg1);
+  border-radius: 20px;
+  width: 100%;
+}
+.servicesMain-itemWrapper > p {
+  font-size: 18px;
+  text-align: justify;
+  color: var(--textColor);
+}
+.servicesMain-itemWrapper > h1 {
+  text-align: center;
+  color: var(--customColor1);
+}
+.servicesMain-itemWrapper > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.servicesMain-item {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  /* background-color: var(--customColor3); */
+  border-radius: 20px;
+  width: 80%;
+}
+.subServiceContent-container {
+  /* border: solid ; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+/* .subServiceContent-container .servicesMain-item:nth-child(even) {
+  background-color: var(--customColor2);
+} */
+
+.servicesMain-item > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.servicesMain-item > h1 {
+  text-align: center;
+}
+.servicesMain-item > h4 {
+  color: var(--customColor3);
+  text-align: center;
+}
+.servicesMain-item > p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.servicesMain-item > p > a {
+  text-decoration: none;
+  color: var(--customColor5);
+}
+.servicesMain-item > ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.servicesMain-item > ul > li > h5 {
+  color: var(--customColor3);
+}
+.servicesMain-item > ul > li > p {
+  font-size: 18px;
+}
+/* -------------------------------------------------------------------------------------- */
+.service-wrapper1 {
+  width: 100%;
+  /* border: solid; */
+}
+.service-wrapper1 > h1 {
+  color: var(--customColor1);
+  text-align: center;
+}
+.service-wrapper1 > img {
+  width: 100%;
+  height: 600px;
+}
+.service-wrapper1 > h1 {
+  color: var(--customColor1);
+  margin-top: 30px;
+  font-weight: bold;
+}
+.head-container {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.head-container > p:nth-child(odd) {
+  background-color: var(--customLightColor);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+}
+.head-container > p {
+  font-size: 18px;
+  text-align: justify;
+  padding: 20px;
+}
+.head-container > p > a {
+  text-decoration: none;
+  color: var(--customColor1);
+}
+.head-container > h1 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+.head-container > h1 > span {
+  color: var(--customColor2);
+}
+.head-container > h1::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  left: 20%;
+}
+.head-container > h2 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+  font-weight: bold;
+}
+.head-container > h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  right: -20px;
+}
+.head-container > h3 {
+  color: var(--customColor1);
+  text-align: start;
+  width: 100%;
+  font-weight: bold;
+}
+.head-container > ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: solid;
+}
+.head-container > ul > li {
+  list-style: none;
+  margin: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-align: start;
+  width: 100%;
+}
+.headList-icon {
+  color: var(--customColor1);
+  font-size: 30px;
+}
+.head-container > p {
+  width: 100%;
+}
+.head-container > p > strong {
+  color: var(--customColor1);
+}
+.youtube-container {
+  /* border: solid red; */
+  width: 100%;
+}

@@ -1,0 +1,100 @@
+.serviceNav-container {
+  /* border: solid blue; */
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--customBg1);
+}
+.serviceNav-container > ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.serviceNav-container > ul > li {
+  border: solid 1px grey;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.pawServiceIco {
+  color: var(--customColor1);
+}
+
+.serviceNav-container > ul > li > a {
+  text-decoration: none;
+  color: var(--textColor);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.serviceNav-container:hover .serviceNav-container > ul > li > a {
+  color: var(--customColor2);
+}
+.serviceNav-container > ul > li > a > img {
+  width: 20px;
+  height: 20px;
+}
+.serviceNav-container > h3 {
+  text-align: start;
+  color: var(--customColor1);
+}
+.serviceNav-container > ul > li:hover {
+  background-color: var(--customColor1);
+}
+.serviceNav-container > ul > li:hover .pawServiceIco {
+  color: var(--customColor2);
+}
+.serviceNav-container > ul > li:hover a{
+    color: white;
+}
+/* ----------------------------------------------ServiceTreatment---------------------------------- */
+
+.serviceTreatment-container {
+  width: fit-content;
+  height: 100%;
+  background-color: var(--customColor2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 50px;
+}
+.serviceTreatment-content {
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.serviceTreatment-content > img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  transition: 300ms ease;
+}
+.serviceTreatment-content:hover img {
+  transform: translateY(-10px);
+}

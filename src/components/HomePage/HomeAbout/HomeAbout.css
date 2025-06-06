@@ -1,0 +1,128 @@
+.homeAbout-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 20px;
+}
+.homeAbout-content {
+  /* border: solid blue; */
+  padding: 20px;
+}
+.homeAbout-content:nth-child(1) {
+  width: 50%;
+}
+.homeAbout-content:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.homeAbout-imgContainer {
+  width: 600px;
+  height: 500px;
+}
+.homeAbout-imgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.homeAboutDetails-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.homeAboutDetails-container > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+}
+.homeAboutDetails-content {
+  /* border: solid green; */
+  width: 80%;
+}
+.homeAboutDetails-content:nth-child(3) {
+  /* border: solid red; */
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--customBg1);
+}
+.homeAboutDetails-content > h6 {
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--customColor1);
+  /* box-shadow: 0 0px 5px rgb(167, 167, 167); */
+  border-radius: 20px;
+}
+.homeAboutDetails-content > h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--customColor2);
+}
+.homeAboutDetails-item {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 20px;
+}
+.homeAboutDetails-item > h4 {
+  font-weight: bolder;
+  color: var(--customColor2);
+}
+.homeAboutDetails-item > h3 {
+  font-weight: bolder;
+  font-size: 30px;
+  color: var(--customColor1);
+}
+.homeAboutDetails-item > p {
+  color: var(--textColor);
+}
+.homeAboutDetails-content > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.homeAboutDetails-content > ul > li {
+  list-style: none;
+  width: 45%;
+  margin: 10px;
+}
+.homeAboutDetails-content > ul > li:hover .paw-ico {
+  color: var(--customColor1);
+}
+
+@media screen and (max-width: 768px) {
+  .homeAbout-container {
+    /* border: solid red; */
+    flex-direction: column;
+    padding: 0px 0px 0px;
+  }
+  .homeAboutDetails-content > h2 {
+    font-size: 30px;
+  }
+  .homeAbout-content:nth-child(1) {
+    width: 100%;
+  }
+  .homeAbout-content:nth-child(2) {
+    width: 100%;
+  }
+  .homeAboutDetails-container > img {
+    display: none;
+  }
+  .homeAboutDetails-content {
+    /* border: solid green; */
+    width: 100%;
+  }
+  .homeAboutDetails-content > ul > li {
+    list-style: none;
+    width: 100%;
+    margin: 10px;
+  }
+}

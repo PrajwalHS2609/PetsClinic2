@@ -1,0 +1,100 @@
+.aboutUs-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.aboutUs-content {
+  /* border: solid blue; */
+  width: 50%;
+  padding: 30px;
+}
+.aboutUsContent-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.aboutUsContent-container > h6 {
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--customColor1);
+  /* box-shadow: 0 0px 5px rgb(167, 167, 167); */
+  border-radius: 20px;
+}
+.aboutUsContent-container > h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--customColor2);
+}
+.aboutUsContent-container > p {
+  color: var(--textColor);
+  text-align: justify;
+}
+.aboutUsImg-container {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+.aboutUsImg-content {
+  /* border: solid pink; */
+  background-color: var(--customBg1);
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.aboutUsImg-content > img {
+  width: 80%;
+  height: 80%;
+  margin-top: -60px;
+  object-fit: contain;
+}
+.aboutUsImg-content:nth-child(1) {
+  height: 300px;
+  width: 200px;
+}
+.aboutUsImg-content:nth-child(2) {
+  height: 200px;
+  width: 200px;
+}
+.aboutUsImg-content:nth-child(2) > img {
+  margin-top: -40px;
+}
+.aboutUsImg-content > h4 {
+  font-weight: bold;
+  color: var(--customColor1);
+  text-align: center;
+}
+
+.aboutUsImg-content > p {
+  color: var(--textColor);
+}
+@media screen and (max-width: 768px) {
+  .aboutUs-container {
+    /* border: solid red; */
+    padding: 20px;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .aboutUs-content {
+    /* border: solid blue; */
+    width: 100%;
+    padding: 10px;
+  }
+  .aboutUsContent-container > h2 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--customColor2);
+}
+}

@@ -1,0 +1,119 @@
+.header-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 400px;
+  background-color: var(--customBg2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.header-content {
+  /* border: solid blue; */
+  width: 50%;
+  height: 100%;
+}
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 100px;
+}
+.header-content:nth-child(1) > img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  left: 300px;
+  animation: bone 1s infinite alternate linear;
+}
+@keyframes bone {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+.header-container > img {
+  width: 350px;
+  height: 180px;
+  object-fit: cover;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+
+.header-content > h2 {
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+.bread-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+.bread-container > a {
+  color: var(--customColor1);
+  /* font-weight: bold; */
+  text-decoration: none;
+  &:hover {
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-content {
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+  }
+  .header-content > h2 {
+    /* border: solid; */
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  .header-content {
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .header-content:nth-child(1) > img {
+    top: 50px;
+    left: 200px;
+  }
+  .header-container > img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+  }
+  .bread-container {
+    width: 100%;
+  }
+}

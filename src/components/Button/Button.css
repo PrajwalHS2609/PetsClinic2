@@ -1,0 +1,73 @@
+.button-container {
+  /* border: solid red; */
+  width: fit-content;
+}
+.button-container > a {
+  text-decoration: none;
+}
+.button-container > a > button {
+  border: none;
+  padding: 6px 7px;
+  background-color: var(--customColor1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 50px;
+  color: white;
+  transition: 300ms ease;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--customColor2);
+  }
+}
+.button-container > a > button > span {
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease;
+  z-index: 1;
+  overflow: visible;
+}
+
+.button-container > a > button:hover span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  border-radius: 50%;
+  border-top: 4px solid #f19545a7;
+  animation: rotateRing 1s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateRing {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.button-container>a > button:hover span {
+  border: solid 1px var(--customColor1);
+  background-color: var(--customColor2);
+}
+.button-container>a > button:hover .button-ico {
+  color: var(--customColor1);
+}
+.button-ico {
+  font-size: 25px;
+  color: var(--customColor2);
+}

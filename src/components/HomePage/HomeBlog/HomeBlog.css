@@ -1,0 +1,105 @@
+.homeBlog-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeBlogHead-container > h6 {
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--customColor1);
+  /* box-shadow: 0 0px 5px rgb(167, 167, 167); */
+  border-radius: 20px;
+  text-align: center;
+}
+
+.homeBlogHead-container > h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--customColor2);
+  text-align: center;
+}
+.homeBlogMain-container {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.homeBlogMain-content {
+  border: 1px solid var(--textColor);
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+}
+.homeBlogMain-item {
+  /* border: solid brown; */
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.homeBlogMain-item:nth-child(2) {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homeBlogMain-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homeBlogMain-item > a {
+  text-decoration: none;
+}
+.homeBlogMain-item > h3 {
+  color: var(--customColor2);
+  font-weight: bolder;
+  font-size: 25px;
+}
+.homeBlogMain-item > h3 > a {
+  color: var(--customColor2);
+  font-weight: bolder;
+  text-decoration: none;
+}
+.homeBlogMain-item > p {
+  color: var(--textColor);
+  text-align: justify;
+}
+.homeBlogMain-content:hover h3 {
+  color: var(--customColor1);
+}
+@media screen and (max-width: 768px) {
+  .homeBlogHead-container > h2 {
+    font-size: 30px;
+  }
+  .homeBlogMain-container {
+    /* border: solid blue; */
+    flex-direction: column;
+    gap: 30px;
+  }
+  .homeBlogMain-content {
+  border: 1px solid var(--textColor);
+ max-width: 350px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+}
+}

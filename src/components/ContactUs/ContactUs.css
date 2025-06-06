@@ -1,0 +1,224 @@
+.contactAddress-container {
+  /* border: solid red; */
+  padding: 40px;
+  position: relative;
+}
+.contactAddress-container > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  width: 500px;
+  padding: 20px;
+}
+.contactAddress-content {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.contactAddress-content:nth-child(2) {
+  flex-direction: column;
+}
+.contactAddress-content:nth-child(2) > h6 {
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--customColor1);
+  /* box-shadow: 0 0px 5px rgb(167, 167, 167); */
+  border-radius: 20px;
+}
+.contactAddress-content:nth-child(2) > h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: var(--customColor2);
+}
+.contactAddress-content:nth-child(2) > p {
+  color: var(--textColor);
+  width: 40%;
+  text-align: center;
+}
+.contactAddress-item {
+  /* border: solid green; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+}
+.contactAddress-item:nth-child(2) {
+  border-left: solid 1px rgb(202, 202, 202);
+  border-right: solid 1px rgb(202, 202, 202);
+}
+.contactAddress-icon {
+  font-size: 40px;
+  color: var(--customColor1);
+}
+.contactAddress-item > h4 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--customColor2);
+}
+.contactAddress-item > a {
+  color: var(--textColor);
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.contactAddress-item > span > a {
+  color: var(--textColor);
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.contactMap-container {
+  padding: 10px;
+  width: 100%;
+}
+.contactMap-container > iframe {
+  width: 100%;
+}
+
+/* --------------------------------------Form--------------------------- */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-form {
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  /* border: solid; */
+  margin: 10px;
+  width: 45%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgb(220, 220, 220);
+  font-size: 15px;
+}
+::placeholder {
+  color: var(--textColor);
+}
+.form-group input:focus {
+  outline: none;
+  border-color: var(--customColor1);
+}
+.form-text {
+  /* border: solid; */
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.form-text > textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 20px;
+  font-size: 15px;
+}
+.form-text textarea:focus {
+  outline: none;
+  border-color: var(--customColor1);
+}
+.submit-btn {
+  width: 200px;
+  padding: 12px;
+  background-color: var(--customColor1);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: var(--customColor2);
+}
+@media screen and (max-width: 768px) {
+  .contactAddress-container {
+    /* border: solid red; */
+    padding: 20px;
+    position: relative;
+  }
+  .contactAddress-content:nth-child(2) > h2 {
+    font-size: 30px;
+  }
+  .contactAddress-container > img {
+    display: none;
+  }
+  .contactAddress-content:nth-child(2) > p {
+    color: var(--textColor);
+    width: 100%;
+    text-align: center;
+  }
+  .contactAddress-content:nth-child(3) {
+    flex-wrap: wrap;
+    /* border: solid; */
+  }
+
+  .contactAddress-item:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: solid 1px rgb(202, 202, 202);
+    border-bottom: solid 1px rgb(202, 202, 202);
+  }
+  /* --------------------------------------Form--------------------------- */
+
+  .contact-form {
+    padding: 10px;
+    gap: 20px;
+  }
+  .form-group {
+    /* border: solid; */
+    margin: 10px;
+    width: 100%;
+  }
+}
