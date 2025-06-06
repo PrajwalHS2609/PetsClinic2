@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceTreatment from "../ServiceComponents/ServiceTreatment";
 import "@/components/style.css";
-import food from "@/Images/ServiceImg/boarding.png";
+import food from "@/Images/ServiceImg/HealthFood.png";
 import Image from "next/image";
 import ServiceNav from "../ServiceComponents/ServiceNav";
 const HealthFoodMain = () => {

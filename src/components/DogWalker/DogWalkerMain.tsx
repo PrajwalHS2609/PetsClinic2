@@ -3,7 +3,7 @@ import ServiceNav from "../ServiceComponents/ServiceNav";
 import Image from "next/image";
 import ServiceTreatment from "../ServiceComponents/ServiceTreatment";
 import "@/components/style.css";
-import dogWalker from "@/Images/ServiceImg/dogGrooming.png";
+import dogWalker from "@/Images/ServiceImg/DogWalker.png";
 const DogWalkerMain = () => {
   return (
     <div className="servicesMain-container">
